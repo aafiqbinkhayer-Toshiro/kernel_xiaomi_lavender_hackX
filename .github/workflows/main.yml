@@ -15,6 +15,6 @@ jobs:
           config: lavender-perf_defconfig
           arch: arm64
           aosp-gcc: true
-          android-version: "9"
+          android-version: "11"
           anykernel3: true
           ccache: true
