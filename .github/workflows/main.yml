@@ -1,0 +1,20 @@
+name: CI - Xiaomi Lavender Kernel Build (pie)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-kernel:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build Kernel
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/aafiqbinkhayer-Toshiro/kernel_xiaomi_lavender_hackX
+          kernel-branch: pie
+          config: lavender-perf_defconfig
+          arch: arm64
+          aosp-gcc: true
+          android-version: "9"
+          anykernel3: true
+          ccache: true
