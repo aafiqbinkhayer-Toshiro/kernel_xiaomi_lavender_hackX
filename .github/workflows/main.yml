@@ -1,13 +1,13 @@
-      - name: Build Kernel
-        uses: dabao1955/kernel_build_action@main
-        with:
-          kernel-url: https://github.com/aafiqbinkhayer-Toshiro/kernel_xiaomi_lavender_hackX
-          kernel-branch: pie
-          config: lavender-perf_defconfig
-          arch: arm64
-          aosp-gcc: true
-          android-version: "11"
-          other-clang-url: https://github.com/kdrag0n/proton-clang
-          other-clang-branch: 20210522
-          anykernel3: true
-          ccache: true
+     - name: Build Kernel
+  uses: dabao1955/kernel_build_action@main
+  with:
+    kernel-url: https://github.com/aafiqbinkhayer-Toshiro/kernel_xiaomi_lavender_hackX
+    kernel-branch: pie
+    config: vendor/lavender-perf_defconfig
+    arch: arm64
+    aosp-gcc: false
+    aosp-clang: false
+    other-clang-url: https://github.com/kdrag0n/proton-clang
+    other-clang-branch: master
+    anykernel3: true
+    ccache: true
