@@ -1,4 +1,4 @@
-     - name: Build Kernel
+ name: Build Kernel
   uses: dabao1955/kernel_build_action@main
   with:
     kernel-url: https://github.com/aafiqbinkhayer-Toshiro/kernel_xiaomi_lavender_hackX
